@@ -5,6 +5,13 @@ function styleChangeOfHistoryAndDonate(id){
   document.getElementById(id).classList.add('bg-[#B4F461]','text-xl')
 
 }
+function validityTest(id){
+  const value=backTodigint(id);
+  if(value<0 && isNaN(value)){
+    alert('INVALID NUMBER')
+  }
+
+}
 
 const mainBlance=document.getElementById('myBlance')
 const historyDiv=document.getElementById('historyPage')

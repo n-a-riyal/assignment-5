@@ -1,8 +1,8 @@
 document.getElementById('btn1').addEventListener('click',function(){
-
+             validityTest('donate1');
     calculateDonate('donate1', 'addMoney1')
     addhistory('donate1','noakhali')
-    
+
 })
 document.getElementById('btn2').addEventListener('click',function(){
 
@@ -27,4 +27,9 @@ document.getElementById('title-history').addEventListener('click',function(){
 styleChangeOfHistoryAndDonate('title-history')
 document.getElementById('donatePage').classList.add('hidden')
 document.getElementById('historyPage').classList.remove('hidden')
+})
+
+const blogs=document.getElementById("blogs")
+blogs.addEventListener('click',function(){
+   window.location.href='../blog.html';
 })
