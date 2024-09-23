@@ -52,15 +52,16 @@
       </div>
     </nav>
     <div class="bg-[#FFFFFF] opacity-90">
-      <div class="flex justify-center space-x-8 py-6">
-        <button class=" bg-[#B4F461] rounded-xl px-8 py-2  font-semibold text-xl text-[#111111] border-none">Donation</button>
-        <button class=" bg-[#B4F461]  rounded-xl px-8 py-2 font-semibold text-xl text-[#111111]">History</button>
+      <div  class="flex justify-center space-x-8 py-6">
+        <button id="title-donate" class=" bg-[#B4F461] rounded-xl px-8 py-2 border font-semibold text-xl text-[#111111] border-none">Donation</button>
+        <button id="title-history" class="   rounded-xl px-8 py-2 font-semibold border text-[#111111]">History</button>
       </div>
     </div>
   </header>
   <main class="w-11/12 md:w-10/12 mx-auto z-1">
-    <!-- first  hero -->
-    <div class="hero p-2 border border-[#1111111A] rounded-2xl ">
+   <div id="donatePage" class="">
+     <!-- first  hero -->
+     <div class="hero p-2 border border-[#1111111A] rounded-2xl ">
       <div class="hero-content flex-col lg:flex-row">
         <img src="./images/noakhali.png" alt="">
         <div class="lg:ml-7">
@@ -68,7 +69,7 @@
             <img src="./images/coin.png" alt="">
             <div> <span id="addMoney1">000</span>BDT</div>
           </div>
-          <h1 class="text-xl font-bold text-[#111111]">Donate for Flood at Noakhali, Bangladesh</h1>
+          <h1 id="noakhali" class="text-xl font-bold text-[#111111]">Donate for Flood at Noakhali, Bangladesh</h1>
           <p class="py-6 text-[#111111] opacity-70 font-sm">
             The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
           </p> 
@@ -76,7 +77,7 @@
           
           <!-- Open the modal using ID.showModal() method -->
           <!-- Open the modal using ID.showModal() method -->
-<button id="btn1" class="btn" >open modal</button>
+<button id="btn1" class="w-full bg-[#B4F461] rounded-xl opacity-90 py-2 text-[#111111] text-xl font-semibold" >open modal</button>
 <dialog id="my_modal_1" class="modal">
   <div class="modal-box">
     <h3 class="text-lg font-bold">Hello!</h3>
@@ -110,16 +111,16 @@
         <div class="lg:ml-7">
           <div class="flex space-x-3 align-middle text-[#111111] opacity-70 p-3 rounded-xl bg-slate-200 w-40 mb-4">
             <img src="./images/coin.png" alt="">
-            <div>000 <span>BDT</span></div>
+            <div><span id="addMoney2">000</span><span>BDT</span></div>
           </div>
-          <h1 class="text-xl font-bold text-[#111111]">Donate for Flood Relief in Feni,Bangladesh</h1>
+          <h1 id="feni"class="text-xl font-bold text-[#111111]">Donate for Flood Relief in Feni,Bangladesh</h1>
           <p class="py-6 text-[#111111] opacity-70 font-sm">
             The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
           </p> 
-          <input class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm" type="text" name="" id="" placeholder="Write Donation Amount">
+          <input id="donate2" class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm" type="text" name="" id="" placeholder="Write Donation Amount">
           
           <!-- Open the modal using ID.showModal() method -->
-<button class="w-full bg-[#B4F461] rounded-xl opacity-90 py-2 text-[#111111] text-xl font-semibold" onclick="my_modal_1.showModal()">Donate Now</button>
+<button id="btn2" class="w-full bg-[#B4F461] rounded-xl opacity-90 py-2 text-[#111111] text-xl font-semibold" onclick="my_modal_1.showModal()">Donate Now</button>
 <dialog id="my_modal_1" class="modal">
   <div class="modal-box flex justify-center flex-col items-center space-x-3">
    <h2 class="font-bold text-[#1111111] text-2xl ">Congrates!</h2>
@@ -143,16 +144,16 @@
         <div class="lg:ml-7">
           <div class="flex space-x-3 align-middle text-[#111111] opacity-70 p-3 rounded-xl bg-slate-200 w-40 mb-4">
             <img src="./images/coin.png" alt="">
-            <div>000 <span>BDT</span></div>
+            <div><span id="addMoney3">000</span> <span>BDT</span></div>
           </div>
-          <h1 class="text-xl font-bold text-[#111111]">Aid for Injured in the Quota Movement</h1>
+          <h1 id="movment" class="text-xl font-bold text-[#111111]">Aid for Injured in the Quota Movement</h1>
           <p class="py-6 text-[#111111] opacity-70 font-sm">
             The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
           </p> 
-          <input class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm" type="text" name="" id="" placeholder="Write Donation Amount">
+          <input id="donate3" class="border w-full rounded-xl p-3 pl-5 mb-6 font-sm text-sm" type="text" name="" id="" placeholder="Write Donation Amount">
           
           <!-- Open the modal using ID.showModal() method -->
-<button class="w-full bg-[#B4F461] rounded-xl opacity-90 py-2 text-[#111111] text-xl font-semibold" onclick="my_modal_1.showModal()">Donate Now</button>
+<button id="btn3" class="w-full bg-[#B4F461] rounded-xl opacity-90 py-2 text-[#111111] text-xl font-semibold" onclick="my_modal_1.showModal()">Donate Now</button>
 <dialog id="my_modal_1" class="modal">
   <div class="modal-box flex justify-center flex-col items-center space-x-3">
    <h2 class="font-bold text-[#1111111] text-2xl ">Congrates!</h2>
@@ -169,9 +170,9 @@
         </div>
       </div>
     </div>
+   </div>
     <!-- history -->
-    <div class="w-10/12 mx-auto hidden"> nure alam riyal</div>
-  </main>
+    <div id="historyPage" class="w-10/12 mx-auto hidden space-y-5"> </div>
 
  <script src="./js/utilites.js"></script>
   <script src="./js/index.js"></script>
