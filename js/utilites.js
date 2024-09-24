@@ -10,7 +10,7 @@ function validityTest(id1,id2){
  const value2=document.getElementById(id2)
   if(value1<0 || isNaN(value1)){
     alert('INVALID NUMBER')
-    return 0;
+    return trure;
   }
  
 
@@ -26,14 +26,21 @@ function backTodigintFormString(id){
    const number1=document.getElementById(id).innerText;
 return parseFloat(number1);
 }
-function calculateDonate(id1,id2){
+function calculateDonate(id1,id2,id3,id4){
    const addMoney= document.getElementById(id2);
-   addMoney.innerText=backTodigint(id1)+backTodigintFormString(id2);
-   if((backTodigintFormString('myBlance')-backTodigint)<0){
+   const newMyBalence=backTodigintFormString('myBlance')-backTodigint(id1);
+   console.log(backTodigintFormString('myBlance'));
+   if((newMyBalence)<0 ){
     alert("Insufficient Blance")
     return;
    }
-  mainBlance.innerText=backTodigintFormString('myBlance')-backTodigint(id1);
+    else{
+      mainBlance.innerText=backTodigintFormString('myBlance')-backTodigint(id1);
+      addMoney.innerText=backTodigint(id1)+backTodigintFormString(id2);
+      addhistory(id1,id3)
+        
+          document.getElementById(id4).classList.remove('hidden')
+    }
 }
 function addhistory(donate,place){
 

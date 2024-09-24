@@ -1,29 +1,24 @@
 document.getElementById('btn1').addEventListener('click',function(){
-          const text1=validityTest('donate1','donate1');
-            calculateDonate('donate1', 'addMoney1')
-            addhistory('donate1','noakhali')
-         function   showModal(){
-
-            }
-          document.getElementById('modal1').classList.remove('hidden');
+          validityTest('donate1','donate1');
+          
+                calculateDonate('donate1', 'addMoney1','noakhali','modal1')
+            
+        
    document.getElementById('donate1').value="";
 
 })
 document.getElementById('btn2').addEventListener('click',function(){
     validityTest('donate2','donate2');
-    calculateDonate('donate2', 'addMoney2')
-    addhistory('donate2','feni')
-    document.getElementById('modal2').classList.remove('hidden');
+    calculateDonate('donate2', 'addMoney2','feni','modal2')
+    
    
 
     document.getElementById('donate2').value="";
 })
 document.getElementById('btn3').addEventListener('click',function(){
     validityTest('donate3','donate3');
-    calculateDonate('donate3', 'addMoney3')
-    addhistory('donate3','movment')
-    
-    document.getElementById('modal3').classList.remove('hidden');
+    calculateDonate('donate3', 'addMoney3','movment','modal3')
+   
     document.getElementById('donate3').value="";
     
 })
