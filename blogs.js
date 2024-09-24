@@ -1,8 +1,8 @@
-const blogs1=document.getElementById("blogs1")
+const blogs=document.getElementById("blogs1")
 
-blogs1.addEventListener('click',function(){
-   
-        window.location.href='/index.html';
+blogs.addEventListener('click',function(){
+   const link=document.getElementById("link2")
+        link.setAttribute('href','./index.html');
     
    
 })
