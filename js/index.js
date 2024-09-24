@@ -42,9 +42,10 @@ const blogs1=document.getElementById("blogs")
 blogs1.addEventListener('click',function(){
    
  
-       const link=document.getElementById("link1")
-            link.setAttribute('href','../blog.html');
-        
+
+    const link1=document.getElementById('link1')
+    link1.setAttribute('href','./blog.html')
+    
        
     })
    
