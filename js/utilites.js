@@ -5,11 +5,14 @@ function styleChangeOfHistoryAndDonate(id){
   document.getElementById(id).classList.add('bg-[#B4F461]','text-xl')
 
 }
-function validityTest(id){
-  const value=backTodigint(id);
-  if(value<0 && isNaN(value)){
+function validityTest(id1,id2){
+  const value1=backTodigint(id1);
+ const value2=document.getElementById(id2)
+  if(value1<0 || isNaN(value1)){
     alert('INVALID NUMBER')
+    return 0;
   }
+ 
 
 }
 
@@ -26,6 +29,10 @@ return parseFloat(number1);
 function calculateDonate(id1,id2){
    const addMoney= document.getElementById(id2);
    addMoney.innerText=backTodigint(id1)+backTodigintFormString(id2);
+   if((backTodigintFormString('myBlance')-backTodigint)<0){
+    alert("Insufficient Blance")
+    return;
+   }
   mainBlance.innerText=backTodigintFormString('myBlance')-backTodigint(id1);
 }
 function addhistory(donate,place){

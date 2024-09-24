@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- daisy ui and tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -23,7 +24,7 @@
         
                 </div>
                 <div class="navbar ">
-                  <div class="navbar-start">
+                  <div id="blogs1" class="navbar-start">
                     <a class="px-8 py-2 rounded-lg bg-[#B4F461] text-xl">Blog</a>
                   </div>
                   <div class="navbar-center hidden lg:flex">
@@ -46,33 +47,36 @@
             </div> -->
           </header>
     <main class="w-10/12 mx-auto mt-3">
+      <div class="flex justify-center">
+        <h1 class="text-6xl text-green-300 font-bold my-5">FQA <i class="fa-solid fa-question text-red-200"></i></h1>
+      </div>
         <div>
-            <div class="collapse collapse-arrow bg-base-200">
+            <div class="collapse collapse-arrow bg-gray-300">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-2xl font-bold">What is DOM?</div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p>The DOM, or Document Object Model, is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each element, attribute, and piece of text is an object that can be manipulated using languages like JavaScript.</p>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-2xl font-blod">Different between Arrary and Odject</div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p>Arrays are ordered lists indexed by numbers, ideal for collections. Objects are key-value pairs, accessed by keys, suitable for structured data. Both are fundamental in JavaScript programming.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow  bg-gray-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-2xl font-bold">Different between innetText and innerHTML</div>
+                <div class="collapse-content">
+                  <p>innerText retrieves or sets only the visible text content of an element, ignoring HTML tags. In contrast, innerHTML allows you to manipulate the entire HTML structure, including tags. Use innerText for text and innerHTML for HTML content.</p>
                 </div>
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-2xl font-bold">What is function?</div>
                 <div class="collapse-content">
-                  <p>hello</p>
-                </div>
-              </div>
-              <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                <div class="collapse-content">
-                  <p>hello</p>
+                  <p>A function is a reusable block of code designed to perform a specific task. It can take inputs, called parameters, and return an output. Functions help organize code, improve readability, and enable code reuse.</p>
                 </div>
               </div>
 
@@ -80,6 +84,8 @@
         </div>
 
     </main>
+   
+    <script src="/blogs.js"></script>
     
 </body>
 </html>
