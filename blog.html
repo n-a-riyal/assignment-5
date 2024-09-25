@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <!-- daisy ui and tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -12,8 +12,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            "lexend": "Lexend"
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
+<body class="font-lexend">
     
         <header class="sticky top-0 z-10 ">
             <nav class="bg-[#F9F7F3]">
@@ -24,8 +36,8 @@
         
                 </div>
                 <div class="navbar ">
-                  <div id="blogs1" class="navbar-start">
-                    <a id="link2"class="px-8 py-2 rounded-lg bg-[#B4F461] text-xl">Blog</a>
+                  <div id="blogs1" class="navbar-start ">
+                    <a id="link2"class="btn hover:bg-[#B4F461] px-8 py-2 rounded-lg bg-[#B4F461] text-xl">Home</a>
                   </div>
                   <div class="navbar-center hidden lg:flex">
                     <div class="pr-2 "><img class="w-7 h-7" src="./images/logo.png" alt=""></div>
@@ -48,7 +60,7 @@
           </header>
     <main class="w-10/12 mx-auto mt-3">
       <div class="flex justify-center">
-        <h1 class="text-6xl text-green-300 font-bold my-5">FQA <i class="fa-solid fa-question text-red-200"></i></h1>
+        <h1 class="text-6xl text-green-300 font-bold my-5">FAQ <i class="fa-solid fa-question text-red-200"></i></h1>
       </div>
         <div>
             <div class="collapse collapse-arrow bg-gray-300">
@@ -60,7 +72,7 @@
               </div>
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-2xl font-blod">Different between Arrary and Odject</div>
+                <div class="collapse-title text-2xl font-bold">Different between Arrary and Odject</div>
                 <div class="collapse-content">
                   <p>Arrays are ordered lists indexed by numbers, ideal for collections. Objects are key-value pairs, accessed by keys, suitable for structured data. Both are fundamental in JavaScript programming.</p>
                 </div>
