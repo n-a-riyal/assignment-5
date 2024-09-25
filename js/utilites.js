@@ -1,7 +1,26 @@
-const mainBlance = document.getElementById('myBlance')
+
+
 const historyDiv = document.getElementById('historyPage')
 
+function addhistory(donate, place) {
+  const div = document.createElement('div');
+  const div1 = document.createElement('div');
+  div1.innerHTML = `<p class="font-bold text-xl">${backTodigint(donate)} Taka is donated  ${document.getElementById(place).innerText} </p>
+   
+   <h5 class="text-sm opacity-80">${new Date()}</h5>
+   
+   `
+  div1.classList.add('p-3', 'border', 'space-y-2', 'rounded-xl')
+//   div1.firstChild.classList.add('font-bold','text-xl');
+// div1.lastChild.classList.add('text-sm');
 
+  div.appendChild(div1)
+
+  historyDiv.appendChild(div)
+
+
+
+}
 
 // history and donate 
 function styleChangeOfHistoryAndDonate(id) {
@@ -39,12 +58,12 @@ function backTodigintFormString(id) {
 }
 
 
-
+const mainBlance = document.getElementById('myBlance')
 
 function calculateDonate(id1, id2, id3, id4) {
   const addMoney = document.getElementById(id2);
   const newMyBalence = backTodigintFormString('myBlance') - backTodigint(id1);
-  console.log(backTodigintFormString('myBlance'));
+  console.log(newMyBalence);
   if ((newMyBalence) < 0) {
     alert("Insufficient Blance")
     document.getElementById(id1).value = "";
@@ -53,29 +72,12 @@ function calculateDonate(id1, id2, id3, id4) {
   else {
     mainBlance.innerText = backTodigintFormString('myBlance') - backTodigint(id1);
     addMoney.innerText = backTodigint(id1) + backTodigintFormString(id2);
+    console.log("nure alam")
     addhistory(id1, id3)
-
+           
     document.getElementById(id4).classList.remove('hidden')
   }
 }
 
 
 
-
-function addhistory(donate, place) {
-  const div = document.createElement('div');
-  const div1 = document.createElement('div');
-  div1.innerHTML = `<p>${backTodigint(donate)} Taka is donated  ${document.getElementById(place).innerText} </p>
-   
-   <h5>${new Date()}</h5>
-   
-   `
-  div1.classList.add('p-3', 'border', 'space-y-2', 'rounded-xl')
-  div.appendChild(div1)
-
-  historyDiv.appendChild(div)
-div1.firstChild.classList.add('font-bold','text-xl')
-div1.lastChild.classList.add('text-sm')
-
-
-}

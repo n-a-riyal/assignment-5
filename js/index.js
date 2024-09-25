@@ -1,13 +1,9 @@
-const blogs1 = document.getElementById("blogs")
-
-
-
-
 
 document.getElementById('btn1').addEventListener('click', function () {
     validityTest('donate1', 'donate1');
     calculateDonate('donate1', 'addMoney1', 'noakhali', 'modal1')
     document.getElementById('donate1').value = "";
+    console.log('riyal')
 
 })
 document.getElementById('btn2').addEventListener('click', function () {
@@ -41,8 +37,7 @@ document.getElementById('title-history').addEventListener('click', function () {
 })
 
 
-
-
+const blogs1 = document.getElementById("blogs")
 blogs1.addEventListener('click', function () {
     const link1 = document.getElementById('link1')
     link1.setAttribute('href', './blog.html')
