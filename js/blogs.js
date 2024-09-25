@@ -1,3 +1,4 @@
+// blog page
 const blogs=document.getElementById("blogs1")
 
 blogs.addEventListener('click',function(){
